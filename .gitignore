@@ -1,21 +1,25 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
-/[Bb]uild/
-/[Bb]uilds/
-/run/
-/.vs/
-/.idea/
+# Unity-generated files, for every project in this repository.
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Bb]uild/
+[Bb]uilds/
+run/
+MemoryCaptures/
+Recordings/
+AgentScripts/
+.vs/
+.idea/
 *.csproj
 *.sln
 *.user
 *.log
-/MemoryCaptures/
-/Recordings/
 .DS_Store
 Thumbs.db
+
+# Local credentials.
 .env
 .env.*
 *.pfx
