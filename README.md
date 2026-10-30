@@ -1,20 +1,21 @@
 # Unity Practice
 
-Unity 游戏练习合集，包含 AngryBirdsReplica 和完整版 TowerDefense。后续 FPS 项目也会放在这个仓库中，目前尚未上传。
+Unity 游戏练习合集，包含 AngryBirdsReplica、完整版 TowerDefense 和合成大球玩法原型。后续 FPS 项目也会放在这个仓库中，目前尚未上传。
 
 | 工程目录 | Unity 版本 | 入口场景 |
 | --- | --- | --- |
 | `AngryBirdsReplica/` | 2022.3.62f3c1 | `Assets/Level01.unity` |
 | `TowerDefense/` | 6000.3.26f1 | `Assets/Scenes/Level01.unity` |
+| `MergeBallPrototype/` | 6000.3.26f1 | `Assets/Scenes/MergeBall.unity` |
 
 ## 打开工程
 
 1. 克隆或下载本仓库。
-2. 在 Unity Hub 中添加需要打开的子目录：`AngryBirdsReplica` 或 `TowerDefense`。不要把仓库根目录当作 Unity 工程打开。
+2. 在 Unity Hub 中添加需要打开的子目录：`AngryBirdsReplica`、`TowerDefense` 或 `MergeBallPrototype`。不要把仓库根目录当作 Unity 工程打开。
 3. 使用上表对应的 Unity 版本，等待资源导入和编译完成。
 4. 打开入口场景，点击 Play。
 
-仓库包含两个工程的 `Assets`、`Packages`、`ProjectSettings` 和资源 `.meta` 文件，不包含 `Library` 等生成缓存或可执行构建。AngryBirdsReplica 原有 `Readme.txt` 中的 `run` 文件夹说明仅适用于另外导出的游戏包。
+仓库包含各工程的 `Assets`、`Packages`、`ProjectSettings` 和资源 `.meta` 文件，不包含 `Library` 等生成缓存或可执行构建。AngryBirdsReplica 原有 `Readme.txt` 中的 `run` 文件夹说明仅适用于另外导出的游戏包。
 
 ## AngryBirdsReplica
 
@@ -36,4 +37,13 @@ Unity 游戏练习合集，包含 AngryBirdsReplica 和完整版 TowerDefense。
 
 ## 后续添加项目
 
-将新的 FPS 工程作为独立子目录放在仓库根目录，与上述两个工程并列。保留其 `Assets`、`Packages`、`ProjectSettings` 和 `.meta` 文件，不提交 `Library` 或构建输出。
+将新的 FPS 工程作为独立子目录放在仓库根目录。保留其 `Assets`、`Packages`、`ProjectSettings` 和 `.meta` 文件，不提交 `Library` 或构建输出。
+
+## MergeBallPrototype
+
+- 9:16 竖屏；移动鼠标选择落点，在场地内单击左键投球。
+- 十级 2D 圆球，仅用颜色和大小区分；同级碰撞合成，十级保留。
+- 随机投放 1～3 级球；合成 2～10 级分别得到 2～512 分，逐级翻倍。
+- 球堆超过顶部虚线连续 2 秒失败，回落则清零危险计时；提供出生保护和重开按钮。
+- 自检入口：Play 模式调用 `MergePrototype.PrototypeChecks.RunRules()`，包含 198 条规则断言。
+- Windows 构建：Unity 菜单 `Prototype > Build Windows`；构建输出不随源码上传。
