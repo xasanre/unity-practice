@@ -15,7 +15,7 @@ Unity 游戏练习合集，包含 AngryBirdsReplica、完整版 TowerDefense 和
 3. 使用上表对应的 Unity 版本，等待资源导入和编译完成。
 4. 打开入口场景，点击 Play。
 
-仓库包含各工程的 `Assets`、`Packages`、`ProjectSettings` 和资源 `.meta` 文件，不包含 `Library` 等生成缓存或可执行构建。AngryBirdsReplica 原有 `Readme.txt` 中的 `run` 文件夹说明仅适用于另外导出的游戏包。
+仓库包含各工程的 `Assets`、`Packages`、`ProjectSettings` 和资源 `.meta` 文件，不包含 `Library` 等生成缓存。合成大球另附 Windows 试玩 ZIP；其余工程未附可执行构建。AngryBirdsReplica 原有 `Readme.txt` 中的 `run` 文件夹说明仅适用于另外导出的游戏包。
 
 ## AngryBirdsReplica
 
@@ -41,9 +41,11 @@ Unity 游戏练习合集，包含 AngryBirdsReplica、完整版 TowerDefense 和
 
 ## MergeBallPrototype
 
+[下载 Windows 64 位试玩包](https://github.com/xasanre/unity-practice/raw/refs/heads/main/MergeBallPrototype/Build/MergeBall-Windows-x64.zip)（约 49 MB）。完整解压后运行 `MergeBall.exe`，不要单独移动 EXE 或删除同目录的数据文件和 DLL。
+
 - 9:16 竖屏；移动鼠标选择落点，在场地内单击左键投球。
 - 十级 2D 圆球，仅用颜色和大小区分；同级碰撞合成，十级保留。
 - 随机投放 1～3 级球；合成 2～10 级分别得到 2～512 分，逐级翻倍。
 - 球堆超过顶部虚线连续 2 秒失败，回落则清零危险计时；提供出生保护和重开按钮。
 - 自检入口：Play 模式调用 `MergePrototype.PrototypeChecks.RunRules()`，包含 198 条规则断言。
-- Windows 构建：Unity 菜单 `Prototype > Build Windows`；构建输出不随源码上传。
+- Windows 构建：Unity 菜单 `Prototype > Build Windows`；已打包的试玩版本位于 `MergeBallPrototype/Build/MergeBall-Windows-x64.zip`，不包含 `DoNotShip` 调试文件。

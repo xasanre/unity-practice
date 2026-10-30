@@ -2,7 +2,8 @@
 
 Unity 6000.3.26f1 · Universal 2D · Windows
 
-试玩：Build\Windows\MergeBall.exe（请保留同目录的数据文件与 DLL）
+试玩：完整解压 Build\MergeBall-Windows-x64.zip，然后运行其中的 MergeBall.exe（请保留同目录的数据文件与 DLL）。
+自行构建后的程序：Build\Windows\MergeBall.exe。
 编辑：用 Unity Hub 打开本目录，打开 Assets\Scenes\MergeBall.unity，点击 Play。
 
 移动鼠标选择落点，在场地内单击左键投球。右上角可重新开始。
