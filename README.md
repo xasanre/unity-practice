@@ -25,8 +25,6 @@ Unity 游戏练习合集，包含 AngryBirdsReplica、完整版 TowerDefense 和
 
 ## TowerDefense
 
-这里保存的是完整版，不是 Basic 基础版。
-
 - 初始 200 金币、5 点生命，提供六个固定建造位置。
 - 选择 Standard（100 金币）或 Heavy（150 金币），再左键点击空建造点。
 - 至少建造一座炮塔后点击 Start Waves，三波敌人自动依次出现。
@@ -35,9 +33,6 @@ Unity 游戏练习合集，包含 AngryBirdsReplica、完整版 TowerDefense 和
 - 点击重开按钮或按 R 重新开始。
 - 编辑器 Play 模式下，可在 GameManager 组件中调整 Test Speed（1–10）加速测试；此选项仅在编辑器中生效。
 
-## 后续添加项目
-
-将新的 FPS 工程作为独立子目录放在仓库根目录。保留其 `Assets`、`Packages`、`ProjectSettings` 和 `.meta` 文件，不提交 `Library` 或构建输出。
 
 ## MergeBallPrototype
 
@@ -47,5 +42,4 @@ Unity 游戏练习合集，包含 AngryBirdsReplica、完整版 TowerDefense 和
 - 十级 2D 圆球，仅用颜色和大小区分；同级碰撞合成，十级保留。
 - 随机投放 1～3 级球；合成 2～10 级分别得到 2～512 分，逐级翻倍。
 - 球堆超过顶部虚线连续 2 秒失败，回落则清零危险计时；提供出生保护和重开按钮。
-- 自检入口：Play 模式调用 `MergePrototype.PrototypeChecks.RunRules()`，包含 198 条规则断言。
-- Windows 构建：Unity 菜单 `Prototype > Build Windows`；已打包的试玩版本位于 `MergeBallPrototype/Build/MergeBall-Windows-x64.zip`，不包含 `DoNotShip` 调试文件。
+- Windows 构建：Unity 菜单 `Prototype > Build Windows`；已打包的试玩版本位于 `MergeBallPrototype/Build/MergeBall-Windows-x64.zip`
