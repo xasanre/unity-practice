@@ -1,0 +1,18 @@
+# Restore these dependencies locally; the public repository does not redistribute them.
+/Assets/Photon/
+/Assets/Photon.meta
+/Assets/FPSGamePack/
+/Assets/FPSGamePack.meta
+/Assets/TextMesh Pro/
+/Assets/TextMesh Pro.meta
+/Assets/Lab6/Fonts/
+/Assets/Lab6/Fonts.meta
+**/PhotonServerSettings.asset*
+/Assets/UOSLauncherEncrypt*
+/Assets/Editor/UOSEnvironments.asset*
+/Assets/Resources/UOSSettings.asset*
+*.unitypackage
+*.zip
+/TestResults/
+/Backups/
+/UserSettings/

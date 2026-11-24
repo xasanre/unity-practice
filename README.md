@@ -1,17 +1,18 @@
 # Unity Practice
 
-Unity 游戏练习合集，包含 AngryBirdsReplica、完整版 TowerDefense 和合成大球玩法原型。后续 FPS 项目也会放在这个仓库中，目前尚未上传。
+Unity 游戏练习合集，包含 AngryBirdsReplica、完整版 TowerDefense、合成大球玩法原型和多人 FPS。
 
 | 工程目录 | Unity 版本 | 入口场景 |
 | --- | --- | --- |
 | `AngryBirdsReplica/` | 2022.3.62f3c1 | `Assets/Level01.unity` |
 | `TowerDefense/` | 6000.3.26f1 | `Assets/Scenes/Level01.unity` |
 | `MergeBallPrototype/` | 6000.3.26f1 | `Assets/Scenes/MergeBall.unity` |
+| [MultiplayerFPS/](MultiplayerFPS/) | 6000.3.26f1 | `Assets/Scenes/game.unity` |
 
 ## 打开工程
 
 1. 克隆或下载本仓库。
-2. 在 Unity Hub 中添加需要打开的子目录：`AngryBirdsReplica`、`TowerDefense` 或 `MergeBallPrototype`。不要把仓库根目录当作 Unity 工程打开。
+2. 在 Unity Hub 中添加上表对应的子目录，不要选择仓库根目录。多人 FPS 需先按[依赖恢复说明](MultiplayerFPS/RESTORING.md)导入 PUN 2、课程素材和 TMP 资源。
 3. 使用上表对应的 Unity 版本，等待资源导入和编译完成。
 4. 打开入口场景，点击 Play。
 
@@ -43,3 +44,11 @@ Unity 游戏练习合集，包含 AngryBirdsReplica、完整版 TowerDefense 和
 - 随机投放 1～3 级球；合成 2～10 级分别得到 2～512 分，逐级翻倍。
 - 球堆超过顶部虚线连续 2 秒失败，回落则清零危险计时；提供出生保护和重开按钮。
 - Windows 构建：Unity 菜单 `Prototype > Build Windows`；已打包的试玩版本位于 `MergeBallPrototype/Build/MergeBall-Windows-x64.zip`
+
+## MultiplayerFPS
+
+[英文 README 与操作说明](MultiplayerFPS/README.md) · [本地依赖恢复步骤](MultiplayerFPS/RESTORING.md)
+
+- 双人可在 Photon 房间内射击、切枪、聊天，房主可在 Sky Arena 与 Ground Arena 之间换图。
+- 选 **Offline AI match** 可与两名机器人对战；只想查看货柜、矮墙和装卸道，可选 **Offline practice → Ground Arena**。
+- 本目录提供源码和场景，不附课程素材原件、Photon 配置或 Windows 提交包。
